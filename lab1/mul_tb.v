@@ -6,7 +6,7 @@ module comb_tb;
   wire [3:0] prod;
 
   // module instantiation
-  comb_module uut (.a(a), .b(b), .prod(prod));
+  mul_module uut (.a(a), .b(b), .prod(prod));
 
   initial
   begin
