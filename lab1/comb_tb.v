@@ -5,7 +5,7 @@ module comb_tb;
   // module outputs
   wire x;
   // signal for binary number
-  wire num = {a, b, c, d};
+  wire [3:0] num = {a, b, c, d};
 
   // module instantiation
   comb_module uut (.a(a), .b(b), .c(c), .d(d), .x(x));
