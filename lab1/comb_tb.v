@@ -23,6 +23,7 @@ module comb_tb;
     #10 {a,b,c,d} = 4'd3;
     #10 {a,b,c,d} = 4'd4;
     #10 {a,b,c,d} = 4'd5;
+    #10 {a,b,c,d} = 4'd6;
     #10 {a,b,c,d} = 4'd7;
     #10 {a,b,c,d} = 4'd8;
     #10 {a,b,c,d} = 4'd9;
