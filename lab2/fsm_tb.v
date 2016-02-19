@@ -14,6 +14,7 @@ begin
   // VCD dump
   $dumpfile("dump.vcd");
   $dumpvars(1, fsm_tb);
+  // $dumpvars(1, fsm_tb, uut.st);
   clk = 1'b0;
   rst = 1'b1;
   coin10p = 1'b0;
