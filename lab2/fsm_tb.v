@@ -27,15 +27,15 @@ begin
   #20 rst = 1'b1; coin10p = 1'b0; coin20p = 1'b0; coin50p = 1'b0; refund = 1'b0;
   #10 rst = 1'b0;
   #20 coin20p = 1'b1;
-  #10 coun20p = 1'b0;
+  #10 coin20p = 1'b0;
   #10 coin20p = 1'b1;
-  #10 coun20p = 1'b0;
+  #10 coin20p = 1'b0;
   #10 coin10p = 1'b1;
   #10 coin10p = 1'b0;
   #20 rst = 1'b1; coin10p = 1'b0; coin20p = 1'b0; coin50p = 1'b0; refund = 1'b0;
   #10 rst = 1'b0;
   #20 coin20p = 1'b1;
-  #10 coun20p = 1'b0;
+  #10 coin20p = 1'b0;
   #10 coin20p = 1'b1;
   #10 coin20p = 1'b0;
   #10 refund = 1'b1;
@@ -71,7 +71,7 @@ begin
   #30 coin20p = 1'b1;
   #10 coin20p = 1'b0;
   #30 coin50p = 1'b1;
-  #10 coin50p = 1'b1;
+  #10 coin50p = 1'b0;
   #20 rst = 1'b1; coin10p = 1'b0; coin20p = 1'b0; coin50p = 1'b0; refund = 1'b0;
   #10 rst = 1'b0;
   #10 $finish;
