@@ -4,7 +4,7 @@ module sqdiff2_tb;
   reg [5:0] a, b, c;
   wire signed [12:0] result;
   
-  sqdiff uut(.clk(clk), .rst(rst), .a(a), .b(b), .c(c), .result(result));
+  sqdiff_reg uut(.clk(clk), .rst(rst), .a(a), .b(b), .c(c), .result(result));
            
   initial
   begin
