@@ -5,7 +5,7 @@ module skin_detect_tb;
 
   wire skin, out_valid;
   
-  integer infile, outfile;
+  integer infile, outfile, read;
 
   skin_detect uut (.clk(clk), .rst(rst), .r(r), .g(g), .b(b), .pix_valid(pix_valid),
                    .skin(skin), .out_valid(out_valid));
@@ -19,7 +19,7 @@ module skin_detect_tb;
     clk = 1'b0; rst = 1'b1; pix_valid = 1'b0;
     #10 rst = 1'b0;
     while(!$feof(infile)) begin
-        #10 $fscanf(infile, "%d %d %d %b\n", r, g, b, pix_valid);
+        #10 read = $fscanf(infile, "%d %d %d %b\n", r, g, b, pix_valid);
     end
     #20 $fclose(infile); $fclose(outfile);
     $finish;
